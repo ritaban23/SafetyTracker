@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
         login = (Button)findViewById(R.id.buttonLogin);
         register = (TextView)findViewById(R.id.buttonRegister);
     }
-    /*
-        Login Module = On click login validate login Id and password
-            Validate from the database the details
-            if alright move to dashboard
-            else throw error
-     */
+    /*******************************************************************************************
+     *  Login Module = On click login validate login Id and password
+     *             Validate from the database the details
+     *             if alright move to dashboard
+     *             else throw error
+     *******************************************************************************************/
     public void login(){
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 } else {
                     Log.d("Validation Failure", "Email or Password or Phone number validation failure");
-                    Toast.makeText(getApplicationContext(), "Please Register", Toast.LENGTH_LONG);
+                    //Toast.makeText(getApplicationContext(), "Please Register", Toast.LENGTH_LONG);
                 }
             }
         });
